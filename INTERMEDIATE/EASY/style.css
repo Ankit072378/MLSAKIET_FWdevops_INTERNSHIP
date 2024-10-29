@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(to right, #612b25, #070e49);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+    transform: scale(1.1);
+}
+
+.hero {
+    background: linear-gradient(to right, #6eb2ee, #eb98fe);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-button {
+    background: #10715e;
+    color: white;
+    padding: 1px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #16a085;
+    transform: scale(1.05);
+}
+
+.services {
+    padding: 20px;
+    text-align: center;
+}
+
+.services h3 {
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: white;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: calc(30% - 40px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.service h4 {
+    margin: 15px 0 10px;
+}
+
+.service p {
+    margin-bottom: 15px;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: white;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: calc(30% - 40px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.faq {
+    padding: 20px;
+}
+
+.faq-item {
+    margin: 15px 0;
+}
+
+.faq-item h4 {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.faq-item h4:hover {
+    color: #1abc9c;
+}
+
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #16a085;
+}
+
+footer {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
